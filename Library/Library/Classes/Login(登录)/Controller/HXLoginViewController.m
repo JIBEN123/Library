@@ -60,7 +60,9 @@
 
 - (void)setupAnimations
 {
-    [self.logoView expandIntoView:self.view finished:nil];
+//    [self.logoView expandIntoView:self.view finished:nil];
+    [self.logoView bounceIntoView:self.view direction:DCAnimationDirectionTop];
+    
     [self.usernameView bounceIntoView:self.view direction:DCAnimationDirectionLeft];
     [self.pwdView bounceIntoView:self.view direction:DCAnimationDirectionRight];
     [self.forgetBtn bounceIntoView:self.view direction:DCAnimationDirectionRight];
