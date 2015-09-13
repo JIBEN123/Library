@@ -3,3 +3,4 @@ use_frameworks!
 
 pod 'SVProgressHUD'
 pod ‘TextFieldEffects’
+pod 'DCAnimationKit'

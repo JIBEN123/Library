@@ -52,10 +52,12 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'Pods/DCAnimationKit.framework'
   install_framework 'Pods/SVProgressHUD.framework'
   install_framework 'Pods/TextFieldEffects.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'Pods/DCAnimationKit.framework'
   install_framework 'Pods/SVProgressHUD.framework'
   install_framework 'Pods/TextFieldEffects.framework'
 fi

@@ -8,6 +8,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXLoginViewController">
             <connections>
+                <outlet property="forgetBtn" destination="FR3-Qp-W6d" id="k2k-ye-PPD"/>
+                <outlet property="loginBtn" destination="7YS-Fy-yDu" id="4vO-Zl-94d"/>
+                <outlet property="logoView" destination="NxI-xG-2ny" id="Pwl-YW-IEl"/>
+                <outlet property="pwdView" destination="jIl-Bd-iwn" id="cS1-Kd-NAG"/>
+                <outlet property="registerBtn" destination="YPs-1Y-xoI" id="VJm-iA-Ufc"/>
+                <outlet property="usernameView" destination="FRQ-Oq-W7z" id="ItU-kA-HYo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,7 +44,7 @@
                                 <constraint firstAttribute="width" secondItem="xj8-Gl-wqV" secondAttribute="height" multiplier="12:11" id="b42-Yg-34W"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入用户名或邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HcZ-nR-3g9" customClass="HoshiTextField" customModule="TextFieldEffects">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名或邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HcZ-nR-3g9" customClass="HoshiTextField" customModule="TextFieldEffects">
                             <rect key="frame" x="60" y="0.0" width="196" height="55"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,7 +87,7 @@
                                 <constraint firstAttribute="width" secondItem="3BA-9w-p1z" secondAttribute="height" multiplier="12:11" id="mk6-4p-K6z"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NRP-Gs-DPg" customClass="HoshiTextField" customModule="TextFieldEffects">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NRP-Gs-DPg" customClass="HoshiTextField" customModule="TextFieldEffects">
                             <rect key="frame" x="60" y="0.0" width="196" height="55"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,8 +155,11 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="New here? 注册"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NxI-xG-2ny">
-                    <rect key="frame" x="80" y="61" width="160" height="67"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NxI-xG-2ny">
+                    <rect key="frame" x="72" y="60" width="176" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NxI-xG-2ny" secondAttribute="height" multiplier="229:103" id="T2R-uP-tOf"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.70796535197068267" green="0.90196078431372551" blue="0.89873779571900458" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,6 +172,7 @@
                 <constraint firstAttribute="bottom" secondItem="CKV-BN-DNo" secondAttribute="bottom" id="AcY-Gu-rnr"/>
                 <constraint firstAttribute="bottom" secondItem="m3f-dp-G6e" secondAttribute="bottom" id="Cjk-MJ-bO1"/>
                 <constraint firstAttribute="trailing" secondItem="m3f-dp-G6e" secondAttribute="trailing" id="F3M-gY-HLC"/>
+                <constraint firstItem="NxI-xG-2ny" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="FAk-QM-ubB"/>
                 <constraint firstItem="7YS-Fy-yDu" firstAttribute="centerX" secondItem="jIl-Bd-iwn" secondAttribute="centerX" id="FdP-IP-GwV"/>
                 <constraint firstItem="FRQ-Oq-W7z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hw2-u9-eVq"/>
                 <constraint firstItem="jIl-Bd-iwn" firstAttribute="trailing" secondItem="FRQ-Oq-W7z" secondAttribute="trailing" id="IhR-od-hQd"/>
@@ -178,6 +188,8 @@
                 <constraint firstItem="jIl-Bd-iwn" firstAttribute="top" secondItem="FRQ-Oq-W7z" secondAttribute="bottom" constant="25" id="fgo-LI-uWg"/>
                 <constraint firstItem="FR3-Qp-W6d" firstAttribute="trailing" secondItem="jIl-Bd-iwn" secondAttribute="trailing" id="gIY-f9-Fw3"/>
                 <constraint firstItem="jIl-Bd-iwn" firstAttribute="centerX" secondItem="FRQ-Oq-W7z" secondAttribute="centerX" id="kuD-xA-qxw"/>
+                <constraint firstAttribute="centerX" secondItem="NxI-xG-2ny" secondAttribute="centerX" id="qZh-mO-ZVx"/>
+                <constraint firstItem="NxI-xG-2ny" firstAttribute="width" secondItem="m3f-dp-G6e" secondAttribute="width" multiplier="0.55" id="rdc-ow-OnC"/>
                 <constraint firstItem="7YS-Fy-yDu" firstAttribute="top" secondItem="FR3-Qp-W6d" secondAttribute="bottom" constant="60" id="zns-nV-vjY"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -192,7 +204,7 @@
     </objects>
     <resources>
         <image name="login_bg" width="621" height="1104"/>
-        <image name="login_logo" width="289" height="103"/>
+        <image name="login_logo" width="229" height="103"/>
         <image name="login_pwd" width="22" height="22"/>
         <image name="login_user" width="22" height="24"/>
         <image name="tf_bg" width="228" height="88"/>
