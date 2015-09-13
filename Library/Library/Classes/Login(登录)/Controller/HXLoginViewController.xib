@@ -128,9 +128,9 @@
                     <state key="normal" title="忘记密码？"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YS-Fy-yDu" customClass="TKTransitionSubmitButton" customModule="Library" customModuleProvider="target">
-                    <rect key="frame" x="58" y="402" width="204" height="40"/>
+                    <rect key="frame" x="58" y="402" width="204" height="45"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ciS-13-G4e"/>
+                        <constraint firstAttribute="height" constant="45" id="ciS-13-G4e"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="登  录"/>
@@ -147,7 +147,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-1Y-xoI">
-                    <rect key="frame" x="90" y="482" width="140" height="30"/>
+                    <rect key="frame" x="90" y="487" width="140" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="4je-KM-lgN"/>
                         <constraint firstAttribute="height" constant="30" id="7NB-ZF-hjl"/>

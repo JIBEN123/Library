@@ -56,6 +56,11 @@
 //    [self setupAnimations];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - 私有方法
 
 - (void)setupAnimations
