@@ -13,8 +13,8 @@
 		A9890FAD1BA50A0A00C9C4E0 /* NSTimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9890FA81BA50A0A00C9C4E0 /* NSTimerEx.swift */; };
 		A9890FAE1BA50A0A00C9C4E0 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9890FA91BA50A0A00C9C4E0 /* SpinerLayer.swift */; };
 		A9890FAF1BA50A0A00C9C4E0 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9890FAA1BA50A0A00C9C4E0 /* TransitionSubmitButton.swift */; };
-		A98FE3AB1BA47A58002E4F91 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FE3A71BA47A58002E4F91 /* LoginViewController.m */; };
-		A98FE3AC1BA47A58002E4F91 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98FE3A81BA47A58002E4F91 /* LoginViewController.xib */; };
+		A98FE3AB1BA47A58002E4F91 /* HXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FE3A71BA47A58002E4F91 /* HXLoginViewController.m */; };
+		A98FE3AC1BA47A58002E4F91 /* HXLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98FE3A81BA47A58002E4F91 /* HXLoginViewController.xib */; };
 		A9AF3C131BA3FB4C00D5BA12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AF3C121BA3FB4C00D5BA12 /* Images.xcassets */; };
 		A9AF3C161BA3FB4C00D5BA12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9AF3C141BA3FB4C00D5BA12 /* LaunchScreen.xib */; };
 		A9AF3C221BA3FB4C00D5BA12 /* LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF3C211BA3FB4C00D5BA12 /* LibraryTests.m */; };
@@ -40,9 +40,9 @@
 		A9890FA91BA50A0A00C9C4E0 /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		A9890FAA1BA50A0A00C9C4E0 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		A9890FB01BA50A3300C9C4E0 /* Library-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Bridging-Header.h"; sourceTree = "<group>"; };
-		A98FE3A61BA47A58002E4F91 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		A98FE3A71BA47A58002E4F91 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		A98FE3A81BA47A58002E4F91 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A98FE3A61BA47A58002E4F91 /* HXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLoginViewController.h; sourceTree = "<group>"; };
+		A98FE3A71BA47A58002E4F91 /* HXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLoginViewController.m; sourceTree = "<group>"; };
+		A98FE3A81BA47A58002E4F91 /* HXLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXLoginViewController.xib; sourceTree = "<group>"; };
 		A9AF3C021BA3FB4C00D5BA12 /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AF3C061BA3FB4C00D5BA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9AF3C121BA3FB4C00D5BA12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		A98FE3A51BA47A58002E4F91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A98FE3A61BA47A58002E4F91 /* LoginViewController.h */,
-				A98FE3A71BA47A58002E4F91 /* LoginViewController.m */,
-				A98FE3A81BA47A58002E4F91 /* LoginViewController.xib */,
+				A98FE3A61BA47A58002E4F91 /* HXLoginViewController.h */,
+				A98FE3A71BA47A58002E4F91 /* HXLoginViewController.m */,
+				A98FE3A81BA47A58002E4F91 /* HXLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,6 +279,7 @@
 		A9AF3BFA1BA3FB4C00D5BA12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HX;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = huangx;
@@ -318,7 +319,7 @@
 			files = (
 				A9AF3C161BA3FB4C00D5BA12 /* LaunchScreen.xib in Resources */,
 				A9AF3C131BA3FB4C00D5BA12 /* Images.xcassets in Resources */,
-				A98FE3AC1BA47A58002E4F91 /* LoginViewController.xib in Resources */,
+				A98FE3AC1BA47A58002E4F91 /* HXLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +392,7 @@
 				A9890FAC1BA50A0A00C9C4E0 /* FadeTransition.swift in Sources */,
 				A9AF3C311BA3FBD700D5BA12 /* AppDelegate.m in Sources */,
 				A9890FAB1BA50A0A00C9C4E0 /* CGRectEx.swift in Sources */,
-				A98FE3AB1BA47A58002E4F91 /* LoginViewController.m in Sources */,
+				A98FE3AB1BA47A58002E4F91 /* HXLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +517,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Library/Classes/Main/Lib/Library-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Library/Classes/Main/Library-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -532,7 +533,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Library/Classes/Main/Lib/Library-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Library/Classes/Main/Library-Bridging-Header.h";
 			};
 			name = Release;
 		};
