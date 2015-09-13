@@ -34,19 +34,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CCFE25A717602F0DA32C934C958D799 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A064B75A9838606659BB57FE5AC8A101;
-			remoteInfo = SVProgressHUD;
-		};
-		B5F5CC96D031360A2BA8565073A4B699 /* PBXContainerItemProxy */ = {
+		536EA03737AEB3A1A164932C39F0B4BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F7ED902DA9B8C7F94554D537AB6765C7;
 			remoteInfo = TextFieldEffects;
+		};
+		8F7B9AA28E3DF84FD3420560D0AF42AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A064B75A9838606659BB57FE5AC8A101;
+			remoteInfo = SVProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -328,8 +328,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				7C8010FB184D3B201B5C626618117D54 /* PBXTargetDependency */,
-				480A63DDA2B351540A05E2405D7500E4 /* PBXTargetDependency */,
+				8D1A73321FEC1D3284C99310B3D858F5 /* PBXTargetDependency */,
+				6A5842F74FC96E54132396819C2980C5 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -431,17 +431,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		480A63DDA2B351540A05E2405D7500E4 /* PBXTargetDependency */ = {
+		6A5842F74FC96E54132396819C2980C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TextFieldEffects;
 			target = F7ED902DA9B8C7F94554D537AB6765C7 /* TextFieldEffects */;
-			targetProxy = B5F5CC96D031360A2BA8565073A4B699 /* PBXContainerItemProxy */;
+			targetProxy = 536EA03737AEB3A1A164932C39F0B4BC /* PBXContainerItemProxy */;
 		};
-		7C8010FB184D3B201B5C626618117D54 /* PBXTargetDependency */ = {
+		8D1A73321FEC1D3284C99310B3D858F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = A064B75A9838606659BB57FE5AC8A101 /* SVProgressHUD */;
-			targetProxy = 8CCFE25A717602F0DA32C934C958D799 /* PBXContainerItemProxy */;
+			targetProxy = 8F7B9AA28E3DF84FD3420560D0AF42AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
